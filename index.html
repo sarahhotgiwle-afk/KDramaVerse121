@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Drama World</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loader">
+
+    <h1>🌸 KDramaVerse</h1>
+
+    <div class="spinner"></div>
+
+</div>
+
+    <!-- Navigation -->
+<nav class="navbar">
+
+    <div class="logo">🌸 KDramaVerse</div>
+
+    <div class="watchlist-counter">
+        ❤️ <span id="watchCount">0</span>
+    </div>
+
+    <div class="menu-toggle">☰</div>
+
+    <button id="darkModeBtn">🌙</button>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#trending">Trending</a></li>
+        <li><a href="#genres">Genres</a></li>
+        <li><a href="#latest">Latest</a></li>
+        <li><a href="#actors">Actors</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="watchlist.html">Watchlist</a></li>
+    </ul>
+
+</nav>
+    <!-- Hero Section -->
+   
+    
+        <section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>Discover Your Next Favorite K-Drama 🎬</h1>
+
+        <p>
+            Romance ❤️ • Thriller 🔥 • Fantasy ✨ • Comedy 😂
+        </p>
+
+        <a href="#trending">
+            <button>Explore Now</button>
+        </a>
+
+    </div>
+
+</section>
+<section class="genres">
+
+    <h2>🎭 Browse by Genre</h2>
+
+    <div class="genre-grid">
+
+        <div class="genre-card">💕 Romance</div>
+
+        <div class="genre-card">😂 Comedy</div>
+
+        <div class="genre-card">🔪 Thriller</div>
+
+        <div class="genre-card">✨ Fantasy</div>
+
+        <div class="genre-card">⚔️ Action</div>
+
+        <div class="genre-card">👻 Horror</div>
+
+        <div class="genre-card">🏥 Medical</div>
+
+        <div class="genre-card">🏫 School</div>
+
+    </div>
+
+</section>
+    <!-- Trending Section -->
+    <section class="trending" id="trending">
+        <h2>Trending Dramas ✨</h2>
+
+        <!-- Search Box -->
+        <!-- Search Box -->
+<div class="search-box">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search your favorite K-Drama...">
+</div>
+
+<section class="top-rated">
+    <h2>⭐ Top Rated Dramas</h2>
+
+    <div class="top-cards">
+
+        <div class="top-card">
+            <h3>1. Goblin</h3>
+            <p>⭐ Rating: 9.4</p>
+        </div>
+
+        <div class="top-card">
+            <h3>2. Crash Landing on You</h3>
+            <p>⭐ Rating: 9.3</p>
+        </div>
+
+        <div class="top-card">
+            <h3>3. Reply 1988</h3>
+            <p>⭐ Rating: 9.2</p>
+        </div>
+
+        <div class="top-card">
+            <h3>4. The Glory</h3>
+            <p>⭐ Rating: 8.8</p>
+        </div>
+
+    </div>
+</section>
+<section class="recommendation">
+
+    <h2>🌟 Today's Recommendation</h2>
+
+    <div class="recommend-card">
+
+        <img src="images\lovely- runner.jpg" alt="Lovely Runner">
+
+        <div class="recommend-text">
+
+            <h3>Lovely Runner</h3>
+
+            <p>
+                If you love romance, time travel, and emotional stories,
+                this drama is today's perfect recommendation!
+            </p>
+
+            <a href="https://www.youtube.com/results?search_query=Lovely+Runner+Official+Trailer" target="_blank">
+                <button>🎬 Watch Trailer</button>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+        <!-- Genre Filters -->
+         <section class="genres" id="genres">
+        <div class="genre-filters">
+            <button class="filter-btn" data-filter="romance">Romance</button>
+<button class="filter-btn" data-filter="comedy">Comedy</button>
+<button class="filter-btn" data-filter="thriller">Thriller</button>
+<button class="filter-btn" data-filter="fantasy">Fantasy</button>
+<button class="filter-btn" data-filter="all">All</button>
+        </div>
+
+        <!-- All Cards Container -->
+        <div class="cards">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="images\lovely- runner.jpg" alt="Lovely Runner">
+                <h3 class="drama-title">
+    <a href="lovely-runnerup.html">
+        Lovely Runner
+    </a>
+</h3>
+                <p>Romance • Fantasy</p>
+                <span>⭐ 9.0</span>
+                <
+
+                <button class="watch-btn">❤️ Add to Watchlist</button>
+
+                <a href="https://www.youtube.com/results?search_query=Lovely+Runner+Official+Trailer"
+                   target="_blank">
+                    <button class="trailer-btn">🎬 Watch Trailer</button>
+                </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="images\queen- of- tear.jpg" alt="Queen of Tears">
+                <h3 class="drama-title">
+    <a href="queen-of-tear.html">
+        queen of tear
+    </a>
+</h3>
+                <p>Drama • Romance</p>
+                <span>⭐ 8.9</span>
+                
+
+                <button class="watch-btn">❤️ Add to Watchlist</button>
+
+                <a href="https://www.youtube.com/results?search_query=Queen+of+Tears+Official+Trailer"
+                   target="_blank">
+                    <button class="trailer-btn">🎬 Watch Trailer</button>
+                </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="images\the- glory.jpg" alt="The Glory">
+                <h3 class="drama-title">
+    <a href="the glory.html">
+        the glory
+    </a>
+</h3>
+                <p>Thriller • Drama</p>
+                <span>⭐ 8.8</span>
+                
+
+                <button class="watch-btn">❤️ Add to Watchlist</button>
+
+                <a href="https://www.youtube.com/results?search_query=The+Glory+Official+Trailer"
+                   target="_blank">
+                    <button class="trailer-btn">🎬 Watch Trailer</button>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    
+        <!-- ================= LATEST DRAMAS ================= -->
+
+<section class="latest" id="latest">
+
+    <h2>🔥 Latest Dramas (2026)</h2>
+
+    <div class="cards">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="images\when -life -give -you-tangerines.jpg"
+                 alt="When Life Gives You Tangerines">
+
+            <h3 class="drama-title">
+                When Life Gives You Tangerines
+            </h3>
+
+            <p>Romance • Slice of Life</p>
+
+            <span>⭐ 9.2</span>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="images\the- nice- guy- kdrama.jpg"
+                 alt="The Nice Guy">
+
+            <h3 class="drama-title">
+                The Nice Guy
+            </h3>
+
+            <p>Romance • Drama</p>
+
+            <span>⭐ 8.8</span>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="images\can- this- love- be- translated.jpg"
+                 alt="Can This Love Be Translated">
+
+            <h3 class="drama-title">
+                Can This Love Be Translated?
+            </h3>
+
+            <p>Romance • Comedy</p>
+
+            <span>⭐ 8.9</span>
+        </div>
+
+    </div>
+
+</section>
+<section class="actors" id="actors">
+
+    <h2>🌟 Popular Actors</h2>
+
+    <div class="actor-container">
+
+        <div class="actor-card">
+            <img src="images/byeon-wooseok.jpg" alt="Byeon Woo-seok">
+            <h3>Byeon Woo-seok</h3>
+        </div>
+
+        <div class="actor-card">
+            <img src="images/kim-hyeyoon.jpg" alt="Kim Hye-yoon">
+            <h3>Kim Hye-yoon</h3>
+        </div>
+
+        <div class="actor-card">
+            <img src="images/kim-soohyun.jpg" alt="Kim Soo-hyun">
+            <h3>Kim Soo-hyun</h3>
+        </div>
+
+        <div class="actor-card">
+            <img src="images/song-hyekyo.jpg" alt="Song Hye-kyo">
+            <h3>Song Hye-kyo</h3>
+        </div>
+
+    </div>
+
+</section>
+<section class="drama-month">
+
+    <div class="month-image">
+        <img src="images\when -life -give -you-tangerines.jpg" alt="Drama of the Month">
+    </div>
+
+    <div class="month-content">
+
+        <span class="badge">🏆 Drama of the Month</span>
+
+        <h2>When Life Gives You Tangerines</h2>
+
+        <p>
+            A heartwarming romance starring IU and Park Bo-gum.
+            Set on Jeju Island, this emotional story follows love,
+            dreams, family, and growing up through different stages of life.
+        </p>
+
+        <div class="rating">
+            ⭐ 9.2/10
+        </div>
+
+        <a href="https://www.youtube.com/results?search_query=When+Life+Gives+You+Tangerines+Trailer" target="_blank">
+            <button>🎬 Watch Trailer</button>
+        </a>
+
+    </div>
+
+</section>
+<section class="contact" id="contact">
+
+    <h2>📩 Contact Us</h2>
+
+    <p>Have a favorite K-Drama recommendation? Send it to us!</p>
+
+    <form class="contact-form">
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</section>
+
+<section class="stats">
+
+    <div class="stat-box">
+        <h2>100+</h2>
+        <p>K-Dramas</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>50+</h2>
+        <p>Actors</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>10K+</h2>
+        <p>Fans</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>2026</h2>
+        <p>Latest Updates</p>
+    </div>
+
+</section>
+
+<section class="newsletter">
+
+    <h2>📩 Stay Updated!</h2>
+
+    <p>Get the latest K-Drama news and recommendations.</p>
+
+    <div class="newsletter-box">
+
+        <input type="email" placeholder="Enter your email">
+
+        <button>Subscribe</button>
+
+    </div>
+
+</section>
+    <!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <h3>🌸 KDramaVerse</h3>
+
+    <p>Your ultimate destination for discovering amazing K-Dramas.</p>
+
+    <div class="social-icons">
+
+        <a href="#">📷 Instagram</a>
+
+        <a href="#">🐦 Twitter</a>
+
+        <a href="#">▶️ YouTube</a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 KDramaVerse | Made with ❤️ by Sara
+    </p>
+
+</footer>
+
+    <!-- ================= POPUP ================= -->
+
+<div class="popup" id="popup">
+
+    <div class="popup-content">
+
+        <span class="close-btn">&times;</span>
+
+        <h2 id="popup-title"></h2>
+
+        <p id="popup-description"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+<button id="topBtn" title="Go to top">⬆️</button>
+
+</body>
+</html>

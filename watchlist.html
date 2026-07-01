@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Watchlist</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">❤️ My Watchlist</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <section class="trending">
+        <h2>Saved Dramas</h2>
+
+        <div id="watchlist-container"></div>
+    </section>
+
+    <script>
+        const container =
+            document.getElementById("watchlist-container");
+
+        const watchlist =
+            JSON.parse(localStorage.getItem("watchlist")) || [];
+
+        if (watchlist.length === 0) {
+            container.innerHTML =
+                "<p>No dramas added yet.</p>";
+        } else {
+
+            watchlist.forEach(drama => {
+
+                const item = document.createElement("div");
+
+                item.classList.add("card");
+
+                item.innerHTML = `
+                    <h3>${drama}</h3>
+                `;
+
+                container.appendChild(item);
+            });
+        }
+    </script>
+
+</body>
+</html>
